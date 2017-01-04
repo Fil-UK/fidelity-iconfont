@@ -1,0 +1,8 @@
+@import 'icon-map';
+
+@each $name, $unicode in $icons-def {
+ .icon-#{$name}:before,
+ %icon-#{$name} {
+   content: $unicode;
+ }
+}
