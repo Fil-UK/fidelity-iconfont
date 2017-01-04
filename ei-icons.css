@@ -1,4 +1,24 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'fidelity-icon-font';
+  src: url("fonts/fidelity-icon-font.eot?tgih9b");
+  src: url("fonts/fidelity-icon-font.eot?tgih9b#iefix") format("embedded-opentype"), url("fonts/fidelity-icon-font.woff2?tgih9b") format("woff2"), url("fonts/fidelity-icon-font.ttf?tgih9b") format("truetype"), url("fonts/fidelity-icon-font.woff?tgih9b") format("woff"), url("fonts/fidelity-icon-font.svg?tgih9b#fidelity-icon-font") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.icon_ {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fidelity-icon-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 .chevron-d-bold:before {
   content: ""; }
 
