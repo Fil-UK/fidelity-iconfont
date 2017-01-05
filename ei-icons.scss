@@ -30,7 +30,7 @@ $icomoon-font-path: "fonts" !default;
 }
 
 @each $name, $unicode in $icons-def {
- .#{$name}:before, {
+ .icon_.#{$name}:before, {
    content: $unicode;
  }
 }
