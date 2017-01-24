@@ -13,36 +13,20 @@ gulp.task('map', function(){
     .pipe(replace(';', ','))
     .pipe(insert.append(');'))
     .pipe(rename("_icon-map.scss"))
-    .pipe(gulp.dest('./output-endinvestor'))
-    .pipe(gulp.dest('./output-flatsite'))
-    .pipe(gulp.dest('./output-aws'));
+    .pipe(gulp.dest('./output'));
 });
 
 gulp.task('fonts', function(){
   gulp.src(['./input-icomoon/fonts/*'])
-    .pipe(gulp.dest('./output-endinvestor/fonts'))
-    .pipe(gulp.dest('./output-flatsite/fonts'))
-    .pipe(gulp.dest('./output-aws/fonts'));
+    .pipe(gulp.dest('./output/fonts'));
 });
 
-gulp.task('sass-ie', function () {
-  return gulp.src('./output-endinvestor/*.scss')
+gulp.task('sass', function () {
+  return gulp.src('./output/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./output-endinvestor'));
+    .pipe(gulp.dest('./output'));
 });
 
 
-gulp.task('sass-flatsite', function () {
-  return gulp.src('./output-flatsite/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./output-flatsite'));
-});
-
-
-gulp.task('sass-aws', function () {
-  return gulp.src('./output-aws/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./output-aws'));
-});
 
 gulp.task('default', ['map', 'fonts']);
