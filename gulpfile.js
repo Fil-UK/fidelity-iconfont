@@ -18,6 +18,12 @@ gulp.task('map', function(){
     .pipe(gulp.dest('./output-aws'));
 });
 
+gulp.task('fonts', function(){
+  gulp.src(['./input-icomoon/fonts/*'])
+    .pipe(gulp.dest('./output-endinvestor/fonts'))
+    .pipe(gulp.dest('./output-flatsite/fonts'))
+    .pipe(gulp.dest('./output-aws/fonts'));
+});
 
 gulp.task('sass-ie', function () {
   return gulp.src('./output-endinvestor/*.scss')
@@ -39,4 +45,4 @@ gulp.task('sass-aws', function () {
     .pipe(gulp.dest('./output-aws'));
 });
 
-gulp.task('default', ['map']);
+gulp.task('default', ['map', 'fonts']);
