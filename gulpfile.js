@@ -14,7 +14,8 @@ gulp.task('map', function(){
     .pipe(insert.append(');'))
     .pipe(rename("_icon-map.scss"))
     .pipe(gulp.dest('./output-endinvestor'))
-    .pipe(gulp.dest('./output-flatsite'));
+    .pipe(gulp.dest('./output-flatsite'))
+    .pipe(gulp.dest('./output-aws'));
 });
 
 
@@ -31,5 +32,11 @@ gulp.task('sass-flatsite', function () {
     .pipe(gulp.dest('./output-flatsite'));
 });
 
+
+gulp.task('sass-aws', function () {
+  return gulp.src('./output-aws/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./output-aws'));
+});
 
 gulp.task('default', ['map']);
