@@ -18,7 +18,7 @@ gulp.task('map', function(){
 
 gulp.task('fonts', function(){
   gulp.src(['./input-icomoon/fonts/*'])
-    .pipe(gulp.dest('./output/fonts'));
+    .pipe(gulp.dest('./output/icon-font'));
 });
 
 gulp.task('sass', function () {
