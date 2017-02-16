@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'fidelity-icon-font';
-  src:  url('#{$icomoon-font-path}/fidelity-icon-font.eot?emi2zu');
-  src:  url('#{$icomoon-font-path}/fidelity-icon-font.eot?emi2zu#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/fidelity-icon-font.woff2?emi2zu') format('woff2'),
-    url('#{$icomoon-font-path}/fidelity-icon-font.ttf?emi2zu') format('truetype'),
-    url('#{$icomoon-font-path}/fidelity-icon-font.woff?emi2zu') format('woff'),
-    url('#{$icomoon-font-path}/fidelity-icon-font.svg?emi2zu#fidelity-icon-font') format('svg');
+  src:  url('#{$icomoon-font-path}/fidelity-icon-font.eot?bkc9k5');
+  src:  url('#{$icomoon-font-path}/fidelity-icon-font.eot?bkc9k5#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/fidelity-icon-font.woff2?bkc9k5') format('woff2'),
+    url('#{$icomoon-font-path}/fidelity-icon-font.ttf?bkc9k5') format('truetype'),
+    url('#{$icomoon-font-path}/fidelity-icon-font.woff?bkc9k5') format('woff'),
+    url('#{$icomoon-font-path}/fidelity-icon-font.svg?bkc9k5#fidelity-icon-font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -265,6 +265,11 @@
 .icon-circle-arrow-back-14 {
   &:before {
     content: $icon-circle-arrow-back-14;
+  }
+}
+.icon-phone-14 {
+  &:before {
+    content: $icon-phone-14;
   }
 }
 .icon-card-cvc {
@@ -1170,6 +1175,21 @@
 .icon-circle-plus-filled {
   &:before {
     content: $icon-circle-plus-filled;
+  }
+}
+.icon-receipt {
+  &:before {
+    content: $icon-receipt;
+  }
+}
+.icon-receipt-dollar {
+  &:before {
+    content: $icon-receipt-dollar;
+  }
+}
+.icon-person-pencil {
+  &:before {
+    content: $icon-person-pencil;
   }
 }
 
